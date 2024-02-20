@@ -11,7 +11,7 @@ func main() {
 
 	userHandler := handler.UserHandler{}
 
-	e.GET("/", userHandler.HandleUserShow)
+	e.GET("/user", userHandler.HandleUserShow)
 
 	e.Logger.Fatal(e.Start(":3000"))
 }
