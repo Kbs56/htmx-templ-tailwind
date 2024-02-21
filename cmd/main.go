@@ -8,6 +8,7 @@ import (
 
 func main() {
 	e := echo.New()
+	e.Static("/static", "css")
 
 	userHandler := handler.UserHandler{}
 	indexHandler := handler.IndexHandler{}
