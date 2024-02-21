@@ -10,7 +10,9 @@ func main() {
 	e := echo.New()
 
 	userHandler := handler.UserHandler{}
+	indexHandler := handler.IndexHandler{}
 
+	e.GET("/", indexHandler.HandleIndexShow)
 	e.GET("/user", userHandler.HandleUserShow)
 
 	e.Logger.Fatal(e.Start(":3000"))
