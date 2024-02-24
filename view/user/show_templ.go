@@ -23,7 +23,7 @@ func Show() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<head><link rel=\"stylesheet\" href=\"/static/output.css\"><script src=\"https://unpkg.com/htmx.org@1.9.10\"></script></head><h1 class=\"font-bold text-slate-700 text-6xl\">Hello from the user page</h1><button class=\"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\" hx-post=\"/clicked\" hx-swap=\"outer-html\">Default</button>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<head><link rel=\"stylesheet\" href=\"/static/output.css\"><script src=\"https://unpkg.com/htmx.org@1.9.10\"></script></head><h1 class=\"font-bold text-slate-700 text-6xl\">Hello from the user page</h1><div id=\"parent-div\"><button class=\"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\" hx-post=\"/clicked\" hx-swap=\"outer-html\" hx-target=\"#parent-div\">Default</button></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
